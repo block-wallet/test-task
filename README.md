@@ -1,2 +1,3 @@
-# test-task
-Blank test task
+# Blank Wallet Test Task
+
+React app with typescript template
