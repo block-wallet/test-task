@@ -15,7 +15,7 @@ export const initAppState: IAppState = {
 const AppState = (props: any) => {
   const [state, dispatch] = useReducer(AppReducer, initAppState);
 
-  // Set fetching as active
+  // Set app state
   const setState = (newState: IAppState) => {
     dispatch({
       type: Actions.SET_STATE,
