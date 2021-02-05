@@ -1,8 +1,12 @@
 import React from 'react';
-import BackgroundState from './context/background/BackgroundState';
+import AppState from './context/background/AppState';
 
 const App = () => {
-  return <BackgroundState></BackgroundState>;
+  return (
+    <AppState>
+      
+    </AppState>
+  );
 };
 
 export default App;

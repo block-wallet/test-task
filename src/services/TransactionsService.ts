@@ -17,27 +17,41 @@ export interface TransactionsServiceState {
 
 /**
  * TransacionsService class 
- * TODO: Complete the addTransaction and the getTransactions methods
+ * TODO: Complete the addTransaction and the getListOfTransactions methods
  */
 export class TransactionsService extends BaseService<TransactionsServiceState> {
-    constructor() {
-        super({
+    constructor(initialState: TransactionsServiceState) {
+        super(initialState || {
             transactions: []
         });
     }
 
     /**
      * It adds a transaction to the list
+     * TODO: Complete addTransaction code inside the Promise resolve function
      */
-    public addTransaction(newTransaction: Transaction) {
+    public async addTransaction(newTransaction: Transaction): Promise<void> {
+        return new Promise<void>((resolve) => {
+            setTimeout(() => {
+                resolve(
 
+                )
+            }, 300);
+        })
     }
 
     /**
      * It returns the list of transactions
+     * TODO: Return the list via the promise resolve function
      */
-    public getListOfTransactions(): Array<Transaction> {
-        
+    public async getListOfTransactions(): Promise<Array<Transaction>>  {
+        return new Promise<Array<Transaction>>((resolve) => {
+            setTimeout(() => {
+                resolve(
+
+                )
+            }, 300);
+        })
     }
 
 }
