@@ -1,22 +1,42 @@
-# Blank Wallet Code Challenge
+<br /> 
+<p align="center">
+  <a href="https://blockwallet.io">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/11839151/188500975-8cd95d07-c419-48aa-bb85-4200a6526f68.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://blockwallet.io/static/images/logo-blockwallet-black.svg" />
+      <img src="[https://blockwallet.io/static/images/logo-medium.svg](https://user-images.githubusercontent.com/11839151/188500975-8cd95d07-c419-48aa-bb85-4200a6526f68.svg)" width="300" />
+    </picture>
+  </a>
+</p>
 
-React app with typescript template
+# BlockWallet Code Challenge
+
+React App with TypeScript template
 
 ## Task
 
-Build an app to send ether with the given user interface.
+Build a mock app to send ETH (without interacting with the blockchain) with the given user interface.
 
-    - Transactions must be stored and fetched making use of the TransactionsService addTransaction and getListOfTransactions methods
-    - Past transactions must be listed on the main page
-    - You would need to add an "amount to transfer" input field (not present in the image)
-    - Styling and layout do not have to be necessarily like the provided image
+### Key points
+
+- Transactions must be **stored and fetched** making use of the `TransactionsService` `addTransaction()` and `getListOfTransactions()` methods
+- Past transactions must be *listed* on the **main page**
+- You would need to add an **amount to transfer** input field (note: it's not present in the image, styling should be consistent)
+- Styling and layout do not have to be necessarily like the provided image
+
+### Steps
+
+- **Fork** the repo into a public Github repository.
+- Add the needed **commits** (preferably following a convention) to fulfill the task.
+- Push the code to **Github**.
+- Send the **public link** and explanations if needed to our team.
+- Wait for our feedback :)
 
 ## What will be evaluated?
 
-    - Interface and "pixel perfect" design will not be taken into account.
-    - Responsive design
-    - Architecture skills
-    - React skills
+- Architecture skills.
+- React and frontend skills.
+- Clean and consistent interface would be a bonus.
 
 ## Reference layout
 ![alt text](test-task-ui.png)
