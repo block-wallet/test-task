@@ -15,7 +15,7 @@ React App with TypeScript template
 
 ## Task
 
-Build a mock app to send ETH (without interacting with the blockchain) with the given user interface.
+Build a **mock app** to send ETH (without interacting with any blockchain or wallet) with the given user interface.
 
 ### Key points
 
