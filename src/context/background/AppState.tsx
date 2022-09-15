@@ -1,16 +1,10 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import AppContext from './AppContext';
 import AppReducer from './AppReducer';
 import Actions from '../contextActions';
 import { Transaction } from '../../services/TransactionsService';
 
-export interface IAppState {
-  transactions: Array<Transaction>;
-}
-
-export const initAppState: IAppState = {
-  transactions: [],
-};
+import { IAppState, initAppState } from './InitialState';
 
 const AppState = (props: any) => {
   const [state, dispatch] = useReducer(AppReducer, initAppState);
@@ -24,8 +18,7 @@ const AppState = (props: any) => {
   };
   
   // TODO: Complete the addTransaction method
-  const addTransaction = (transaction: Transaction) => {
-
+  const addTransaction = async (transaction: Transaction) => {
   }
 
   return (
