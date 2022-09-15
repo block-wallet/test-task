@@ -60,7 +60,7 @@ export class TransactionsService extends BaseService<TransactionsServiceState> {
   public async getListOfTransactions(): Promise<Array<Transaction>> {
     return new Promise<Array<Transaction>>((resolve) => {
       setTimeout(() => {
-        resolve(this.getState().transactions);
+        resolve(this.getState().transactions.reverse());
       }, 300);
     });
   }

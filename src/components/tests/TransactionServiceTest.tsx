@@ -1,10 +1,9 @@
 import { TransactionsService } from "../../services/TransactionsService";
-import { initAppState } from "../../context/background/InitialState";
 import { useEffect } from "react";
 import defaults from "../../utils/constants";
 
 const TransactionServiceTest = () => {
-  const transactionsService = new TransactionsService(initAppState);
+  const transactionsService = new TransactionsService({transactions:[]});
 
   const getAllTransactions = async () => {
     transactionsService.getListOfTransactions().then((transactions) => {
