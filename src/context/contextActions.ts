@@ -8,7 +8,7 @@ enum Actions {
 
 export interface SetTransactionAction {
   type: Actions.SET_TRANSACTIONS;
-  payload: Transaction[];
+  payload: Omit<Transaction, "id">[];
 }
 
 export interface SetStateAction {

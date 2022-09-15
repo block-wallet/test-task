@@ -4,7 +4,7 @@ import { IAppState, initAppState } from './InitialState';
 
 type ContextType = {
   state: IAppState,
-  addTransaction: (transaction: Transaction) => void
+  addTransaction: (transaction: Omit<Transaction,"id">) => void
   setState: (state: IAppState) => void
 }
 
