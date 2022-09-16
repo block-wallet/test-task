@@ -35,7 +35,7 @@ const AppState = (props: any) => {
   
   useEffect(() => {
     init();    
-  }, []);
+  });
 
   // Set app state
   const setState = (newState: IAppState) => {
