@@ -1,6 +1,6 @@
-import ETHIcon from '../assets/img/icons/ETH.svg';
-import { Transaction } from '../services/TransactionsService';
-import defaults from '../utils/constants';
+import ETHIcon from '../../assets/img/icons/ETH.svg';
+import { Transaction } from '../../services/TransactionsService';
+import defaults from '../../utils/constants';
 
 interface TransactionProps {
   transaction: Omit<Transaction,"id">;

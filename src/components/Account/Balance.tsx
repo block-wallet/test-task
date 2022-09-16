@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
-import arrowUp from '../assets/img/icons/arrowUp.svg';
-import defaults from '../utils/constants';
+import arrowUp from '../../assets/img/icons/arrowUp.svg';
+import defaults from '../../utils/constants';
 
 const Balance = () => {
   return (

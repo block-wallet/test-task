@@ -7,6 +7,7 @@ module.exports = {
         backgroundMain: "#F2F2F2",
         backgroundSecondary: "#FFFFFF",
         backgroundBalance: "#EAF3FC",
+        BackgroundNextButton: "#167EFF",
       },
     },
   },

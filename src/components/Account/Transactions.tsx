@@ -1,5 +1,5 @@
 import Transaction from "./TransactionDetails";
-import AppContext from "../context/background/AppContext";
+import AppContext from "../../context/background/AppContext";
 import { useContext } from "react";
 
 const Transactions = () => {

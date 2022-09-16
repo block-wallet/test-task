@@ -6,4 +6,5 @@ export interface IAppState {
 
 export const initAppState: IAppState = {
     transactions: [],
+
 };

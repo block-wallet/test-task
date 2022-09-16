@@ -1,8 +1,10 @@
+import Form from "../components/Send/Form";
+
 const Send = () => {
   return (
       <div className="bg-backgroundMain w-screen h-screen py-10">
-        <div className="bg-backgroundSecondary w-3/12 mx-auto rounded shadow-lg p-6">
-          <h1>Send Page</h1>
+        <div className="bg-backgroundSecondary w-3/12 h-5/6 mx-auto rounded shadow-lg py-6">
+         <Form/>
         </div>
       </div>
   );

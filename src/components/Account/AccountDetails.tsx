@@ -1,8 +1,8 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import blockLogo from '../assets/img/blocklogo.png';
-import defaults from '../utils/constants';
-import copyIcon from '../assets/img/icons/copy.svg';
+import blockLogo from '../../assets/img/blocklogo.png';
+import defaults from '../../utils/constants';
+import copyIcon from '../../assets/img/icons/copy.svg';
 
 const AccountDetails = () => {
   return (
