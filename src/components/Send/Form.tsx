@@ -12,13 +12,12 @@ type FormData = {
 };
 
 const Form = () => {
-  const { state, addTransaction } = useContext(AppContext);
+  const { state, setState, addTransaction } = useContext(AppContext);
 
   const { register, setValue, handleSubmit, formState: { errors } } = useForm<FormData>();
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit( async (data) => {
     const transaction = {to:data.to, value:data.amount, date: new Date(), from: defaults.publicAddress}
     await addTransaction(transaction);
-    // console.log("State", state);
   });
 
   return (

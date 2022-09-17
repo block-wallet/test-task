@@ -7,9 +7,11 @@ import { Transaction, TransactionsService } from '../../services/TransactionsSer
 import { IAppState, initAppState } from './InitialState';
 import defaults from '../../utils/constants';
 
+const transactionsService = new TransactionsService({transactions:[]});
+
+
 const AppState = (props: any) => {
   const [state, dispatch] = useReducer(AppReducer, initAppState);
-  const transactionsService = new TransactionsService({transactions:[]});
 
   const addDefaultTransactions = async() => {
     await Promise.all(Object.values(defaults.pastTransactions).map(async (transaction) => {
@@ -31,11 +33,9 @@ const AppState = (props: any) => {
     });
   };
 
-
-  
   useEffect(() => {
     init();    
-  });
+  },[]);
 
   // Set app state
   const setState = (newState: IAppState) => {
@@ -48,7 +48,7 @@ const AppState = (props: any) => {
   // TODO: Complete the addTransaction method
   const addTransaction = async (transaction: Omit<Transaction,"id">) => {
     await transactionsService.addTransaction(transaction);
-    const currentTransactions = await transactionsService.getListOfTransactions()    
+    const currentTransactions = await transactionsService.getListOfTransactions()  
     dispatch({
       type: Actions.SET_TRANSACTIONS,
       payload: currentTransactions

@@ -8,8 +8,9 @@ const Transactions = () => {
   return (
     <>
       <div className="flex flex-col divide-y">
-        {state.transactions.map((transaction) => {
-             return <Transaction transaction={transaction} />
+        {state.transactions.map((transaction ,index) => {
+          if (index <=3)
+            return <Transaction transaction={transaction} key={index} />;
         })}
       </div>
     </>

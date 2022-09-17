@@ -6,7 +6,7 @@ import defaults from '../../utils/constants';
 const Balance = () => {
   return (
     <>
-        <div className="flex flex-col bg-backgroundBalance w-full rounded my-4 justify-center align-middle items-center py-8">
+        <div className="flex flex-col bg-backgroundBalance w-full rounded my-3 justify-center align-middle items-center py-8">
             <h1 className='font-bold text-3xl'>{defaults.accountBalance} ETH</h1>
             <p className="text-sm text-slate-500 mb-5 "> ${defaults.accountBalance*defaults.ethPrice} USD</p>
             <Link to='/send'>
