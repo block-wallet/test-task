@@ -6,6 +6,7 @@ import {
 import AppState from './context/background/AppState';
 import Account from './pages/Account';
 import Send from "./pages/Send";
+import SendSuccess from "./pages/SendSuccess";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Account/>} /> 
             <Route path='/send' element={<Send/>} />
-            <Route path='/send-success' element={<Send/>} />
+            <Route path='/send-success' element={<SendSuccess/>} />
           </Routes>
       </Router>
     </AppState>

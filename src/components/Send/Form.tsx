@@ -46,12 +46,12 @@ const Form = () => {
             <div className="flex px-6 py-4 pb-0 border-t space-x-4">
         <div className="w-1/2">
           <Link to='/'>
-            <button className="text-black py-3 px-10 rounded font-bold border-black border-2 text-sm w-full">Cancel</button>
+            <button className="text-black py-3 px-10 rounded font-bold border-black border-2 text-sm w-full hover:font-extrabold">Cancel</button>
           </Link>
         </div>
         <div className="w-1/2">
           <Link to='/send-success'>
-            <button className="text-white py-3 px-10 rounded font-bold text-sm border-BackgroundNextButton border-2 bg-BackgroundNextButton w-full" onClick={()=> onSubmit() }>Next</button>
+            <button className="text-white py-3 px-10 rounded font-bold text-sm border-BackgroundNextButton border-2 bg-BackgroundNextButton w-full hover:font-extrabold" onClick={()=> onSubmit() }>Next</button>
           </Link>
         </div>
       </div>

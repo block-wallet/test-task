@@ -13,7 +13,7 @@ const AccountDetails = () => {
             <div className='hover:cursor-pointer'>
                 <h4 className="text-md font-medium">Account 1</h4>
                 <div className='flex space-x-1'>
-                  <p className="text-xs text-slate-500">{defaults.publicAddress.substring(0,5)}...{defaults.publicAddress.slice(-4)}</p>
+                  <p className="text-xs text-slate-500 hover:text-slate-800">{defaults.publicAddress.substring(0,5)}...{defaults.publicAddress.slice(-4)}</p>
                   <img src={copyIcon} alt="" className='w-4 h-4' />
                 </div>
             </div>
