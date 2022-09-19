@@ -32,6 +32,8 @@ Build a **mock app** to send ETH (without interacting with any blockchain or wal
 - Send the **public link** and explanations if needed to our team.
 - Wait for our feedback :)
 
+**Note: NO backend is needed, this is an entirely front-end task.**
+
 ## What will be evaluated?
 
 - Architecture skills.
